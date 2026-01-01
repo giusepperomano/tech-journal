@@ -34,7 +34,7 @@ and uncompress it.
 Create a Python virtual environment with the prerequisites for the OpenGD77
 firmware loader:
 
-```
+```bash
 linux:~> mkdir opengd77_fw_loader
 linux:~> cd opengd77_fw_loader
 linux:~/opengd77_fw_loader> python -m venv .
@@ -44,7 +44,7 @@ linux:~/opengd77_fw_loader> source bin/activate.csh
 
 Download the OpenGD77 firmware loader script for Linux:
 
-```
+```bash
 wget https://www.opengd77.com/downloads/Linux_tools/opengd77_stm32_firmware_loader.py
 ```
 
@@ -56,7 +56,7 @@ buttons (respectively above and below the PTT button).
 
 Flash the OpenGD77 firmware with the following command:
 
-```
+```bash
 (opengd77_fw_loader) linux:~/opengd77_fw_loader> python opengd77_stm32_firmware_loader.py -s "MD9600-CSV(2571V5)-V26.45.bin -m DM-1701" -f OpenDM1701.bin
 ```
 
@@ -69,7 +69,7 @@ Download the latest version of OpenGD77CPS from the following link:
 then set the following environment variables to create a dedicated WINE
 environment in the $HOME/.wine-opengd77cps directory:
 
-```
+```bash
 linux:~> export LC_ALL=C
 linux:~> export WINEARCH=win32
 linux:~> export WINEPREFIX=$HOME/.wine-opengd77cps
@@ -78,27 +78,27 @@ linux:~> export WINEPREFIX=$HOME/.wine-opengd77cps
 Connect the radio to the PC then run the following command to install
 OpenGD77CPS:
 
-```
+```bash
 linux:~> wine downloads/radio/OpenGD77CPSInstaller_E2022.10.16.01.exe
 ```
 
 Find the correct COM port assigned to the radio (assuming there are
 no other cdc-acm devices connected to the PC):
 
-```
+```bash
 linux:~> PORT=`ls -la $WINEPREFIX/dosdevices | grep ACM | awk '{print toupper($9)}'`
 ```
 
 Configure the correct COM port in Windows registry:
 
-```
+```bash
 linux:~> wine reg add "HKLM\System\CurrentControlSet\Enum\SERIAL\\${PORT}\\${PORT}" /v ClassGUID /t REG_SZ /d {4D36E978-E325-11CE-BFC1-08002BE10318}
 linux:~> wine reg add "HKLM\System\CurrentControlSet\Enum\SERIAL\\${PORT}\\${PORT}" /v FriendlyName /t REG_SZ /d "OpenGD77 (${PORT})"
 ```
 
 Start OpenGD77CPS:
 
-```
+```bash
 linux:~> wine C:/Program\ Files/OpenGD77CPS/OpenGD77CPS.exe
 ```
 

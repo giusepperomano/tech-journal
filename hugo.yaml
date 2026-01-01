@@ -1,0 +1,13 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Giuseppe Romano
+params:
+  disableSpecial1stPost: true
+  social: true
+  contact:
+    email: giuseppe_romano@yahoo.com
+  subtitle: A Personal Journal
+theme: ["PaperMod"]
+caches:
+  images:
+    dir: :cacheDir/images

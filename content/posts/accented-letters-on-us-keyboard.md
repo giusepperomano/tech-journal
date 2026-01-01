@@ -2,8 +2,8 @@
 Title: Typing Accented Letters on a Keyboard with US Layout
 date: 2021-12-05
 tags:
-|linux
-|internationalization
+- linux
+- internationalization
 ---
 ## Introduction
 

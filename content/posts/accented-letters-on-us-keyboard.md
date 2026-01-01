@@ -14,7 +14,7 @@ in Ubuntu Linux using the **Compose key**.
 
 Configure **Right Alt** as the compose key from GNOME settings:
 
-! compose key configuration](/images/configure-compose-key-in-gnome.png)
+![compose key configuration](/images/configure-compose-key-in-gnome.png)
 
 Alternatively you can enable it from the command line:
 

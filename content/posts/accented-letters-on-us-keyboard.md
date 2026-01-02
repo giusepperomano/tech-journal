@@ -19,7 +19,7 @@ Configure **Right Alt** as the compose key from GNOME settings:
 Alternatively you can enable it from the command line:
 
 ```bash
-gsettings set org.gnome.desktop.input-sources xkb-options " 'compose:ralt']
+gsettings set org.gnome.desktop.input-sources xkb-options "['compose:ralt']"
 ```
 
 ## Key Sequences
@@ -41,4 +41,4 @@ gsettings set org.gnome.desktop.input-sources xkb-options " 'compose:ralt']
 
 ## Links
 
-[How can I type accented characters like ë?](https://askubuntu.com/questions/358/how-can-i-type-accented-characters-like-%C3%AB)
+- [How can I type accented characters like ë?](https://askubuntu.com/questions/358/how-can-i-type-accented-characters-like-%C3%AB)

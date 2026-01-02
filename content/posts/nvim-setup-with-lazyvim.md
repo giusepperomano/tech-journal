@@ -84,8 +84,8 @@ Select the font in your GNOME Terminal profile (GNOME Teminal &rarr; Preferences
 
 ## Further Customization
 
-Neovim stores user configuration in the '~/.config/nvim/lua' directory. You can add
-or override options by editing 'lua/config/options.lua' (create it if it doesn't
+Neovim stores user configuration in the '~/.config/nvim' directory. You can add or
+override options by editing 'lua/config/options.lua' (create it if it doesn't
 exist):
 
 ```lua

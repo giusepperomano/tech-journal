@@ -84,8 +84,8 @@ Select the font in your GNOME Terminal profile (GNOME Teminal &rarr; Preferences
 
 ## Further Customization
 
-LazyVim stores user configuration in the '~/.newvim/lua' directory. You can add or
-override options by editing 'lua/config/options.lua' (create it if it doesn't
+Neovim stores user configuration in the '~/.config/nvim/lua' directory. You can add
+or override options by editing 'lua/config/options.lua' (create it if it doesn't
 exist):
 
 ```lua
